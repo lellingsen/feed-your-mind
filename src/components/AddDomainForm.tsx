@@ -12,6 +12,7 @@ export const AddDomainForm: Component = () => {
 
   return (
     <form onSubmit={(evt: Event) => evt.preventDefault()}>
+      <label>Add a domain:</label>
       <input type="text" ref={domainInput} />
       <button onClick={addDomainClicked}>Add</button>
     </form>
